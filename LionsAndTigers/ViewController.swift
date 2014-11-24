@@ -105,7 +105,7 @@ class ViewController: UIViewController {
 //        breedLabel.text = tiger.breed
 
         
-        UIView.transitionWithView(self.view, duration: 2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations:
+        UIView.transitionWithView(self.view, duration: 2, options: UIViewAnimationOptions.TransitionFlipFromRight, animations:
             {
                 self.myImageView.image = tiger.image
                 self.nameLabel.text = tiger.name
