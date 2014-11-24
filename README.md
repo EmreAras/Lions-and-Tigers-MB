@@ -3,7 +3,7 @@ Lions-and-Tigers-MB
 
 Swift App
 
-I'm testing the swift syntax 
+Testing the swift syntax 
 
 Emré
 
