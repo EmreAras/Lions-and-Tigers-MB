@@ -51,7 +51,6 @@ class ViewController: UIViewController {
         
         secondTiger.chuff()
         
-        
         var thirdTiger = Tiger()
         thirdTiger.name = "Jacob"
         thirdTiger.breed = "Malayan Tiger"
@@ -67,8 +66,10 @@ class ViewController: UIViewController {
        
         self.myTigers += [secondTiger, thirdTiger, fourthTiger]
         
-        myTiger.chuffNumerOfTimes(3)
-        secondTiger.chuffNumerOfTimes(2)
+        myTiger.chuffNumberOfTimes(3)
+        secondTiger.chuffNumberOfTimes(2)
+        
+        
         
         
     }
@@ -105,7 +106,7 @@ class ViewController: UIViewController {
 //        breedLabel.text = tiger.breed
 
         
-        UIView.transitionWithView(self.view, duration: 2, options: UIViewAnimationOptions.TransitionFlipFromRight, animations:
+        UIView.transitionWithView(self.view, duration: 2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations:
             {
                 self.myImageView.image = tiger.image
                 self.nameLabel.text = tiger.name
@@ -113,7 +114,18 @@ class ViewController: UIViewController {
                 self.breedLabel.text = tiger.breed
             }, completion: { (finished: Bool) -> () in
         })
-}}
+        
+        
+        
+        
+        
+}
+
+
+
+
+
+}
 
 
 

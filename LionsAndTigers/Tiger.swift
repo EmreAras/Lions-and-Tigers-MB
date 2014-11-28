@@ -13,27 +13,22 @@ import UIKit
 struct Tiger  {
     
     var age = 0
-    
     var name = ""
-    
     var breed = ""
-    
     var image = UIImage(named: "")
     
-    func chuff() {
+    func chuff()
+    {
         println("Tiger: Chuff Chuff")
     }
     
-    
-    func chuffNumerOfTimes (numberOfTimes: Int) {
-        
-        for var chuff = 0; chuff < numberOfTimes; ++chuff {
-            
-            self.chuff()
+    func chuffNumberOfTimes (numberOfTimes: Int)
+    {
+        for var chuff = 0; chuff < numberOfTimes; ++chuff
+        {
+        self.chuff()
         }
-        
     }
-    
     
 }
 
