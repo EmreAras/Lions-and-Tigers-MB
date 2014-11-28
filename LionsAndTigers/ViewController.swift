@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var ageLabel: UILabel!
     @IBOutlet var breedLabel: UILabel!
+    @IBOutlet weak var randomFactLabel: UILabel!
 
     var myTigers:[Tiger] = []
     
@@ -32,6 +33,9 @@ class ViewController: UIViewController {
         myTiger.age = 8
         myTiger.image = UIImage(named: "BengalTiger.jpg")
         
+        
+        myTiger.age = myTiger.ageInYearsFromAge(myTiger.age)
+        
         myTiger.chuff()
         
         self.myTigers.append(myTiger)
@@ -42,6 +46,10 @@ class ViewController: UIViewController {
         self.nameLabel.text = myTiger.name
         self.ageLabel.text = "\(myTiger.age)"
         self.breedLabel.text = myTiger.breed
+        self.randomFactLabel.text = myTiger.randomFact()
+        
+        
+        
         
         var secondTiger = Tiger()
         secondTiger.name = "Tigress"
@@ -49,7 +57,14 @@ class ViewController: UIViewController {
         secondTiger.age = 2
         secondTiger.image = UIImage(named: "IndochineseTiger.jpg")
         
+        
+        secondTiger.age = secondTiger.ageInYearsFromAge(secondTiger.age)
+        
+        
+        
         secondTiger.chuff()
+        
+        myTiger.chuffANumberOfTimes(1, isLoud: true)
         
         var thirdTiger = Tiger()
         thirdTiger.name = "Jacob"
@@ -57,12 +72,17 @@ class ViewController: UIViewController {
         thirdTiger.age = 4
         thirdTiger.image = UIImage(named: "MalayanTiger.jpg")
         
+        
+        thirdTiger.age = thirdTiger.ageInYearsFromAge(thirdTiger.age)
+        
         var fourthTiger = Tiger()
         fourthTiger.name = "Spar"
         fourthTiger.breed = "Siberian Tiger"
         fourthTiger.age = 5
         fourthTiger.image = UIImage(named: "SiberianTiger.jpg")
         
+        
+        fourthTiger.age = fourthTiger.ageInYearsFromAge(fourthTiger.age)
        
         self.myTigers += [secondTiger, thirdTiger, fourthTiger]
         
@@ -112,11 +132,10 @@ class ViewController: UIViewController {
                 self.nameLabel.text = tiger.name
                 self.ageLabel.text = "\(tiger.age)"
                 self.breedLabel.text = tiger.breed
+                self.randomFactLabel.text = tiger.randomFact()
+                
             }, completion: { (finished: Bool) -> () in
         })
-        
-        
-        
         
         
 }
