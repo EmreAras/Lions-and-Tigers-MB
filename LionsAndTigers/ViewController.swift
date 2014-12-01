@@ -19,6 +19,10 @@ class ViewController: UIViewController {
 
     var myTigers:[Tiger] = []
     
+    var lionsArray:[Lion] = []
+    
+    var currentAnimal = (species: "Tiger", index: 0)
+    
     var currentIndex = 0
     
 
@@ -48,19 +52,13 @@ class ViewController: UIViewController {
         self.breedLabel.text = myTiger.breed
         self.randomFactLabel.text = myTiger.randomFact()
         
-        
-        
-        
         var secondTiger = Tiger()
         secondTiger.name = "Tigress"
         secondTiger.breed = "Indochinese"
         secondTiger.age = 2
         secondTiger.image = UIImage(named: "IndochineseTiger.jpg")
         
-        
         secondTiger.age = secondTiger.ageInYearsFromAge(secondTiger.age)
-        
-        
         
         secondTiger.chuff()
         
@@ -71,7 +69,6 @@ class ViewController: UIViewController {
         thirdTiger.breed = "Malayan Tiger"
         thirdTiger.age = 4
         thirdTiger.image = UIImage(named: "MalayanTiger.jpg")
-        
         
         thirdTiger.age = thirdTiger.ageInYearsFromAge(thirdTiger.age)
         
@@ -89,6 +86,22 @@ class ViewController: UIViewController {
         myTiger.chuffNumberOfTimes(3)
         secondTiger.chuffNumberOfTimes(2)
         
+        
+        var lion = Lion()
+        lion.age = 4
+        lion.isAlphaMale = false
+        lion.image = UIImage(named: "Lion.jpg");
+        lion.name = "Mufasa"
+        lion.subspecies = "West African"
+        
+        var lioness = Lion()
+        lioness.age = 3
+        lion.isAlphaMale = false
+        lion.image = UIImage(named: "Lioness.jpeg");
+        lion.name = "Sarabi"
+        lion.subspecies = "Barbary"
+        
+        self.lionsArray += [lion, lioness]
         
         
         
@@ -116,9 +129,6 @@ class ViewController: UIViewController {
         self.currentIndex = randomIndex
         
         let tiger = self.myTigers [randomIndex]
-        
-        
-        
 //        
 //        myImageView.image = tiger.image
 //        nameLabel.text = tiger.name
@@ -140,6 +150,25 @@ class ViewController: UIViewController {
         
 }
 
+    
+    func updateAnimal () {
+        
+        
+        switch currentAnimal {
+            
+        case ("Tiger", _):
+            let randomIndex = Int(arc4random_uniform(UInt32(lionsArray.count)))
+            currentAnimal = ("Lion", randomIndex)
+            
+        default:
+            let randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
+            currentAnimal = ("Tiger", randomIndex)
+        }
+        
+        
+        
+        
+    }
 
 
 
