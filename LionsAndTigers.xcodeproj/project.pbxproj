@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2879360E1A2C7FB600EE8465 /* Lion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2879360D1A2C7FB600EE8465 /* Lion.swift */; };
 		28AC428E19F2BAD5006DB9FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AC428D19F2BAD5006DB9FB /* AppDelegate.swift */; };
 		28AC429019F2BAD5006DB9FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AC428F19F2BAD5006DB9FB /* ViewController.swift */; };
 		28AC429319F2BAD5006DB9FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AC429119F2BAD5006DB9FB /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2879360D1A2C7FB600EE8465 /* Lion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lion.swift; sourceTree = "<group>"; };
 		28AC428819F2BAD5006DB9FB /* LionsAndTigers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LionsAndTigers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AC428C19F2BAD5006DB9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28AC428D19F2BAD5006DB9FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				28AC428D19F2BAD5006DB9FB /* AppDelegate.swift */,
 				28AC428F19F2BAD5006DB9FB /* ViewController.swift */,
 				28AC42AD19F2C9C0006DB9FB /* Tiger.swift */,
+				2879360D1A2C7FB600EE8465 /* Lion.swift */,
 				28AC429119F2BAD5006DB9FB /* Main.storyboard */,
 				28AC429419F2BAD5006DB9FB /* Images.xcassets */,
 				28AC429619F2BAD5006DB9FB /* LaunchScreen.xib */,
@@ -250,6 +253,7 @@
 				28AC429019F2BAD5006DB9FB /* ViewController.swift in Sources */,
 				28AC42AE19F2C9C0006DB9FB /* Tiger.swift in Sources */,
 				28AC428E19F2BAD5006DB9FB /* AppDelegate.swift in Sources */,
+				2879360E1A2C7FB600EE8465 /* Lion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +447,7 @@
 				28AC42A919F2BAD5006DB9FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28AC42AA19F2BAD5006DB9FB /* Build configuration list for PBXNativeTarget "LionsAndTigersTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +456,7 @@
 				28AC42AC19F2BAD5006DB9FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
